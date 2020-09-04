@@ -1,0 +1,135 @@
+<div id="app">
+  <nav class="nav-wrapper">
+    <div class="container">
+      <a class="brand-logo" href="#">
+          My Portfolio
+      </a>
+      <div class="navbar" id="navbarSupportedContent">
+          
+        <ul class="right_info">
+          <li class="nav-item"><a href='#about'>About</a></li>
+          <li class="nav-item"><a href='#skill'>Skills</a></li>
+          <li class="nav-item"><a href='#products'>Products</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="py-4">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="3677262_m.jpg" class="slideshow"> 
+            <div class="caption">
+              <h2>Welcome to </h2>
+            </div>
+        </li>
+        <li>
+          <img src="665244_s.jpg" class="slideshow fadeout">
+            <div class="caption fadeout">
+              <h2>My portfolio site </h2>
+            </div>
+        </li>
+        <li>
+          <img src="3579397_s.jpg" class="slideshow fadeout">
+            <div class="caption fadeout">
+              <h2>Thanks for coming!</h2>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+</div>
+<div class="about" id="about">
+  <h2 class="title">About</h2>
+  <h3 class="text">
+    2020年6月よりプログラミング未経験から某スクールでの学習を開始<br>
+    スクールにて、HTML/CSS,Ruby,Ruby,Ruby on Rails,JavaScript,jQuery<br>
+    スクール卒業後の現在、Vue.js,Javaの学習を開始<br>
+    在学中に個人制作、チーム開発を経験
+  </h3>
+  <h2 class="history">personal history</h2>
+  <h3 class="personal_history">
+    2000.4 ~ 2020.6  製造業にて勤務<br>
+    2005.2 ~ 2012.12 ダンサーとして活動、各地のクラブイベントに出演<br>
+    2008.3 ~ 2009.5  イベントオーガナイザーとして活動<br>
+    2017.5 ~ 2017.5  フィリピン マニラに短期留学<br>
+    2020.6 ~ 現在     プログラミング学習中
+</div>
+<div class="skills" id="skill">
+<button class="skill_info" v-on:click="display_switch()">Skills button</button>
+  <transition mode="out-in">
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-html5 fa-5x"></i>
+      <ul class="html">
+        <li>HTML</li>
+        <li>3months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-css3-alt fa-5x"></i>
+      <ul class="css">
+        <li>CSS</li>
+        <li>3months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-js fa-5x"></i>
+      <ul class="js">
+        <li>Javascript</li>
+        <li>2months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="logo jquery">jQuery</i>
+      <ul class="jQuery">
+        <li>jQuery</li>
+        <li>2months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-vuejs fa-5x"></i>
+      <ul class="vue">
+        <li>Vue.js</li>
+        <li>2weeks</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="logo mysql">MySQL</i>
+      <ul class="Mysql">
+        <li>MySQL</li>
+        <li>3months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-aws fa-5x"></i>
+      <ul class="aws">
+        <li>aws</li>
+        <li>2months</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="logo heroku">heroku</i>
+      <ul class="Heroku">
+        <li>heroku</li>
+        <li>3weeks</li>
+      </ul>
+    <div v-if="this.show" class="icon">
+      <i class="fab fa-java fa-5x"></i>
+      <ul class="java">
+        <li>Java</li>
+        <li>2weeks</li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </transition>
+</div>
+<div class="products" id="products">
+  <div class="field">
+    <h2 class="products_title raise">Products</h2>
+  </div>
+  <div class="product_field">
+    <img src="myself.jpg">
+    <img src="furima.jpg">
+  </div>
+</div>
+<%= javascript_pack_tag 'port' %>
