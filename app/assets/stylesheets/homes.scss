@@ -180,7 +180,7 @@
 
 .products {
   margin-top: 40px;
-  height: 1450px;
+  height: 1950px;
   width: 100vw;
   text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,.1);
@@ -338,6 +338,19 @@
   }
 
 }
+.report {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 250px;
+    height: 500px;
+  }
+  p{
+    padding: 100px 0 0 30px;
+    font-size: 30px;
+  }
+}
+
 .footer {
   align-items: center;
   margin-top: 520px;
