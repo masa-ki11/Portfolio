@@ -57,9 +57,17 @@
 </div>
 <div class="skills" id="skill">
 <button class="skill_info" v-on:click="display_switch()">Skills button</button>
-  <p v-if="this.text">
-  
-  </p>
+  <transition name="fade" >
+    <p v-if="this.text">
+    ↑<br>
+    デザイン・コーディング：HTML/CSS<br>
+    フロントエンド：JavaScript, jQuery, Vue.js<br>
+    バックエンド：Ruby, Ruby on Rails, Java<br>
+    DB：MySQL<br>
+    インフラ・サーバー：AWS(EC2,S3), heroku<br>
+    <br>
+    </p>
+  </transition>
   <transition mode="out-in" >
     <div v-if="this.show" class="icon">
       <i class="fab fa-html5 fa-5x"></i>
