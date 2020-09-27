@@ -56,12 +56,15 @@ const vm = new Vue ({
   el: "#skill",
   data: function() {
     return {
-      show: false
+      show: false,
+      text: true
     }
   },
   methods: {
     display_switch: function() {
       this.show = !this.show
+      this.text = !this.text
     }
   }
 })
+

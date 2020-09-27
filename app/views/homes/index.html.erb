@@ -57,7 +57,10 @@
 </div>
 <div class="skills" id="skill">
 <button class="skill_info" v-on:click="display_switch()">Skills button</button>
-  <transition mode="out-in">
+  <p v-if="this.text">
+  
+  </p>
+  <transition mode="out-in" >
     <div v-if="this.show" class="icon">
       <i class="fab fa-html5 fa-5x"></i>
       <ul class="html">
